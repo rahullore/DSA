@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.work", "Smart.work\Smart.work.csproj", "{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E912473D-6A3C-4EDD-8833-8698123CD0AC}
+	EndGlobalSection
+EndGlobal
