@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.work", "Smart.work\Smart.work.csproj", "{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smart.work.Test", "Smart.work.Test\Smart.work.Test.csproj", "{D03E18B0-C64C-441D-B285-3E653BD0AF17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{490F9A89-072C-4BCC-ABF6-9B5B9456AAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D03E18B0-C64C-441D-B285-3E653BD0AF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D03E18B0-C64C-441D-B285-3E653BD0AF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D03E18B0-C64C-441D-B285-3E653BD0AF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D03E18B0-C64C-441D-B285-3E653BD0AF17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
