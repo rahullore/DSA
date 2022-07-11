@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Smart.work.Recursion{
-    public class PermutationWithSpaces{
-           
-           public List<string> Answer { get; set; }= new List<string>();
-          public void Run(string input)
+namespace Smart.work.Recursion
+{
+    public class PermutationWithSpaces
+    {
+
+        public List<string> Answer { get; set; } = new List<string>();
+        public void Run(string input)
         {
             if (input.Length == 1)
             {
@@ -27,8 +29,8 @@ namespace Smart.work.Recursion{
                 return;
             }
             string output1 = output + input[0];
-            string output2 = output + " " + input[0]; 
-            string shorterInput = input.Substring(1, input.Length-1 );
+            string output2 = output + " " + input[0];
+            string shorterInput = input.Substring(1, input.Length - 1);
             Solve(shorterInput, output1);
             Solve(shorterInput, output2);
             return;
