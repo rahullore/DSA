@@ -54,14 +54,28 @@ namespace Smart.work.Meetingroom
                     if(curr.Start<prev.End && curr.End <= prev.End)
                     {
                         continue;
+                        /*
+                        p------------------------------
+                        c  ---------------------
+                        */
                     }
                     else if(curr.Start < prev.End)
                     {
+                        /*
+                        p------------------------------------
+                        c         ----------------------------------------
+
+                        */
                         idleTime -= (curr.End - prev.End).TotalMinutes;                        
                     }
                     else if(curr.Start >= prev.End)
                     {
-                        idleTime -= (curr.End - prev.End).TotalMinutes;
+                        /*
+                          p-------------------------------
+                          c                                   -----------------
+                        */
+                        idleTime -= (curr.End - curr.Start).TotalMinutes;
+
                     }
                     prev = new Logtime { Start = prev.Start, End = curr.End };
                 }

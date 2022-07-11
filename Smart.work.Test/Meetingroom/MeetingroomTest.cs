@@ -2,6 +2,7 @@ using Smart.work.Meetingroom;
 
 namespace Smart.work.Test.Meetingroom
 {
+    [TestFixture]
     public class MeetingroomTest
     {
         [SetUp]
