@@ -12,6 +12,7 @@ namespace Smart.work.Test.Meetingroom{
 
         BalancedParenthesis _balancedParenthesis = null;
         List<string> answer3 = null;
+        List<string> answer4 = null;
 
 
         [SetUp]
@@ -28,6 +29,7 @@ namespace Smart.work.Test.Meetingroom{
             _balancedParenthesis = new BalancedParenthesis();
             _balancedParenthesis.Run(3);
             answer3 = _balancedParenthesis.Answer;
+            answer4 = _balancedParenthesis.Answer2;
         }
 
         [Test]
@@ -62,6 +64,14 @@ namespace Smart.work.Test.Meetingroom{
             Assert.IsTrue(answer3.Contains("()(())"));
             Assert.IsTrue(answer3.Contains("()()()"));
 
+        }
+
+        [Test]
+        public void Print_N_bit_binary_numbers_having_more_1_s_than_0_s_for_any_prefix()
+        {           
+            Assert.IsTrue(answer4.Contains("101"));
+            Assert.IsTrue(answer4.Contains("111"));
+            Assert.IsTrue(answer4.Contains("110"));            
         }
 
     }
