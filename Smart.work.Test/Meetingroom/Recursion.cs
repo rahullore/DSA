@@ -10,6 +10,9 @@ namespace Smart.work.Test.Meetingroom{
         PermutationWithCaseChange _permutationWithCaseChange = null;
         List<string> answer2 = null;
 
+        BalancedParenthesis _balancedParenthesis = null;
+        List<string> answer3 = null;
+
 
         [SetUp]
         public void Setup()
@@ -21,6 +24,10 @@ namespace Smart.work.Test.Meetingroom{
             _permutationWithCaseChange  = new PermutationWithCaseChange();
             _permutationWithCaseChange.Run("ab");
             this.answer2 = _permutationWithCaseChange.Result;
+
+            _balancedParenthesis = new BalancedParenthesis();
+            _balancedParenthesis.Run(3);
+            answer3 = _balancedParenthesis.Answer;
         }
 
         [Test]
@@ -43,5 +50,19 @@ namespace Smart.work.Test.Meetingroom{
             Assert.IsTrue(answer2.Contains("aB"));
             Assert.IsTrue(answer2.Contains("ab"));
         }
+
+        [Test]
+        public void BalanceParenthesesTest()
+        {
+            var expected = new List<string> { "((()))", "(()())", "(())()", "()(())","()()()" };
+
+            Assert.IsTrue(answer3.Contains("((()))"));
+            Assert.IsTrue(answer3.Contains("(()())"));
+            Assert.IsTrue(answer3.Contains("(())()"));
+            Assert.IsTrue(answer3.Contains("()(())"));
+            Assert.IsTrue(answer3.Contains("()()()"));
+
+        }
+
     }
 }
